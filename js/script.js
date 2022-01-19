@@ -11,6 +11,23 @@
     navbar.classList.remove('active');
 };
 
+var swiper = new Swiper(".home-slider", {
+    autoplay: {
+        delay: 3000,
+      },
+    spaceBetween: 20,
+    effect: "fade",
+    grabCursor: true,
+    loop:true,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
+
+
+
 /* let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 

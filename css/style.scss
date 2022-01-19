@@ -10,7 +10,7 @@
   transition: all .2s linear;
 }
 
-$red:rgb(207, 204, 11);
+$red:rgb(187, 184, 33);
 $black : #000;
 $white : #fff;
 $light-white:#aaa;
@@ -21,6 +21,7 @@ $light-bg:#111;
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
+  margin:0;
   scroll-padding-top: 5rem;
   overflow-x: hidden;
 /* 
@@ -47,17 +48,43 @@ body{
   display: none;
 }
 
+.btn{
+  background: $red;
+ // background:linear-gradient(130deg, $red 93%, transparent 100%);
+  //border: 1px solid transparent;
+  display: inline-block;
+  font-size: 18px;
+  padding:1rem 2.8rem;
+  padding-right: 3rem;
+  color: $white;
+  cursor: pointer;
+  font-weight:bold;
+  z-index: 2;
+ 
+  //clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 56%, 0% 0%);
+  
+  &:hover{
+    transform: scale(1.1) !important;
+    color:$red;
+    background-color: transparent;
+    
+    
+  }
+}
+
+
+//-------------------------------------------
+
 .header{
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top:0; left:0; right:0;
   display:flex;
   justify-content:space-between;
   font-size: 24px;
   color: $white;
   padding:8px 9%;
-  background-color: transparent;
+  background: $black;
+  z-index: 100000;
   
   .logo{
    color:$white;
@@ -72,6 +99,7 @@ body{
     font-size:20px;  
     padding: 9px;
     color:$white;
+    z-index: 1;
 
      &:hover{
       background:$red;
@@ -80,6 +108,66 @@ body{
   }
 
 }
+.home{
+  width:100%;
+  padding:0;
+  margin-top: 50px; //<--- debe ser igual abajo los px
+
+  .slide{
+    //height:calc(100vh - 50px); //<--- los px debe ser igual que margin top
+   height: 70vh;
+    position:relative;
+    background-size: cover !important;
+    background-position: center !important;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    z-index: -1;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color:rgba(214, 202, 32, 0.123);
+      z-index: -1;
+    }
+
+    .contentt{
+      background-color:rgb(68, 0, 255);
+      width:60%;
+      height: 10%;
+
+      span{
+        font-size: 2rem;
+        color:$red;
+        display: block;
+      }
+
+      h3{
+        font-size: 5rem;
+        color:$white;
+        padding:1rem 0;
+      }
+    }
+  }
+}
+
+//------- estilos botones slider ----------
+
+.swiper-pagination-bullet{
+  width:30px;
+  height:30px;
+  border-radius: 0;
+
+  &.swiper-pagination-bullet-active{
+    background: $red;
+   }
+}
+
+
 
 /* section{
   padding:5rem 9%;
@@ -820,14 +908,16 @@ body{
 
   .navbar{
     position:absolute;
-    //background-color:red;
+    background-color:red;
     display: flex;
+    align-items:start;
     flex-direction: column;
-    left: 5;
-    right: 5;
+    left: 0;
+    padding-left: 50px;
+    width: 100%;
     top: 120%;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    
+
     &.active{
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
