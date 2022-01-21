@@ -170,12 +170,13 @@ section {
 }
 
 .about {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
+  height: 80vh;
 }
 
 .about .image {
@@ -186,13 +187,19 @@ section {
 }
 
 .about .image img {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .about .content {
+  left: 0;
+  right: 0;
   width: 50%;
-  padding: 2px;
-  padding-left: 10px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.about .content .btn {
+  padding-top: 20px;
 }
 
 .about .content span {
@@ -203,11 +210,12 @@ section {
 
 .about .content h3 {
   font-size: 30px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .about .content p {
   line-height: 2;
+  color: #888888;
 }
 
 .about .content .box-container {
@@ -220,11 +228,13 @@ section {
 
 .about .content .box-container .box {
   margin: 2px;
+  margin-top: 5px;
+  padding: 10px;
   width: calc((100% - 10px) / 2);
 }
 
 .about .content .box-container .box h3 {
-  font-size: 26px;
+  font-size: 20px;
   padding-top: 10px;
 }
 
@@ -235,6 +245,127 @@ section {
 
 .about .content .box-container .box p {
   line-height: 2;
+  color: #888888;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 1rem;
+  width: 100%;
+  background: #888888;
+  z-index: -1;
+}
+
+.heading span {
+  font-size: 28px;
+  color: #bbb821;
+  background: #000;
+  padding: .5rem 1.5rem;
+  border: 0.1rem solid #888888;
+  border-radius: .5rem;
+  z-index: 1;
+}
+
+.features {
+  text-align: center;
+  margin-top: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .box-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features .box {
+  width: calc(90% / 3);
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.features .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.features .box .image {
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.features .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features .box .content {
+  max-width: 90%;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.features .box .content img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin-top: 25px;
+  padding-bottom: 10px;
+  height: 100px;
+}
+
+.features .box .content h3 {
+  color: #bbb821;
+  font-weight: bold;
+}
+
+.features .box .content p {
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+.features .box .content .btn {
+  padding: 10px;
 }
 
 /* 
@@ -953,6 +1084,7 @@ section {
 @media (max-width: 780px) {
   #menu-btn {
     display: inline-block;
+    font-size: 30px;
   }
   #menu-btn.fa-times {
     -webkit-transform: rotate(180deg);
@@ -960,7 +1092,7 @@ section {
   }
   .navbar {
     position: absolute;
-    background-color: red;
+    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -974,7 +1106,7 @@ section {
     left: 0;
     padding-left: 50px;
     width: 100%;
-    top: 120%;
+    top: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
