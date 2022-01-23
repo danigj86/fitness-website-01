@@ -44,6 +44,11 @@ body {
   display: none;
 }
 
+p {
+  line-height: 2;
+  color: #888888;
+}
+
 .btn {
   background: #bbb821;
   display: inline-block;
@@ -183,7 +188,7 @@ section {
   width: 50%;
   padding-right: 2px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .about .image img {
@@ -195,7 +200,7 @@ section {
   right: 0;
   width: 50%;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 130px;
 }
 
 .about .content .btn {
@@ -243,11 +248,6 @@ section {
   padding-right: 10px;
 }
 
-.about .content .box-container .box p {
-  line-height: 2;
-  color: #888888;
-}
-
 .heading {
   text-align: center;
   margin-bottom: 3rem;
@@ -261,7 +261,7 @@ section {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 1rem;
+  height: 2px;
   width: 100%;
   background: #888888;
   z-index: -1;
@@ -280,19 +280,10 @@ section {
 .features {
   text-align: center;
   margin-top: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .features .box-content {
+  padding-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,6 +357,63 @@ section {
 
 .features .box .content .btn {
   padding: 10px;
+}
+
+.pricing {
+  margin-top: 100px;
+}
+
+.pricing .box-content {
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing .box {
+  width: calc(90% / 3);
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.pricing .box span {
+  font-size: 48px;
+  font-weight: bold;
+  color: #bbb821;
+}
+
+.pricing .box h3 {
+  font-size: 28px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.pricing .box .fas {
+  line-height: 4;
+}
+
+.pricing .box i {
+  color: #bbb821;
+}
+
+.pricing .second {
+  background-color: #111;
 }
 
 /* 
