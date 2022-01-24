@@ -416,6 +416,121 @@ section {
   background-color: #111;
 }
 
+.trainers {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.trainers .box-content {
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.trainers .box {
+  width: calc(90% / 3);
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.trainers .box:hover .content {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.trainers .box .image {
+  height: 28rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.trainers .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trainers .box .content {
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 13px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.trainers .box .content hr {
+  margin-top: 15px;
+  height: 2px;
+  width: 90%;
+  background-color: #bbb821;
+  /* Modern Browsers */
+}
+
+.trainers .box .content h3 {
+  color: #bbb821;
+  font-weight: bold;
+}
+
+.trainers .box .content p {
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #888888;
+}
+
+.trainers .box .content .share {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.trainers .box .content .share a {
+  color: #fff;
+  font-size: 22px;
+}
+
 /* 
 
 .heading{

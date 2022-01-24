@@ -397,6 +397,104 @@ section{
   background-color: $light-bg;
  }
 }
+//---------- TRAINERS -------------
+.trainers{
+  // background-color:green;
+   text-align: center;
+   margin-top: 100px;
+   
+   .box-content{
+     //background-color: red;
+     padding-left: 10%;
+     display: flex;
+     width: 90%;
+     justify-content:center;
+    }
+
+   .box{
+     width: calc(90% / 3);
+     background-color: $light-bg;
+     display: flex;
+     margin: 4px;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     overflow:hidden;
+     position: relative;
+     //border: 5px solid green;
+
+     &:hover .content{
+      transform: translateY(15%);
+    }
+ 
+  
+     .image{
+      height: 28rem;
+      width: 100%;
+      overflow:hidden;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+         
+    }
+     .content{
+       background-color: $light-bg;
+       //border: 2px solid blue;
+       display: flex;
+       flex-direction: column;
+       //justify-content:center;
+       align-items:center;
+       width:100%;
+       text-align: center;
+       overflow:hidden;
+       position: absolute;
+       left:0;
+       right:0;
+       bottom: 13px;
+       transform: translateY(50%);
+       transition: all 0.5s ease;
+       
+     
+         hr{
+          margin-top: 15px;
+          height: 2px;
+          width: 90%;
+          background-color: $red; /* Modern Browsers */
+          }
+      
+         h3{
+           color: $red;
+           font-weight: bold;
+         }
+         p{
+          // background-color: blue;
+           line-height: 2;
+           text-align: center;
+           margin-bottom: 10px;
+           color:$light-white;
+         }
+      
+         .share{
+           //background-color:red;
+           width: 60%;
+           display: flex;
+           justify-content:space-between;
+           margin-top: 10px;
+           padding-bottom: 20px;
+
+           a{
+             color: $white;
+             font-size: 22px;
+           }
+         }
+
+       }
+     
+   }
+ }
 
 /* 
 
