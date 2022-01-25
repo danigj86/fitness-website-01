@@ -28,9 +28,8 @@ var swiper = new Swiper(".home-slider", {
     },
 });
 
-
+//----- TESTIMONIAL SWIPER -------
 var swiper = new Swiper(".testimonials-slider", {
-    
     grabCursor: true,
     loop:true,
     autoplay: {
@@ -43,6 +42,32 @@ var swiper = new Swiper(".testimonials-slider", {
         },
         600:{
             slidesPerView:2,
+        },
+    },
+});
+
+
+var swiper = new Swiper(".blog-slider", {
+    spaceBetween: 20,
+    grabCursor: true,
+    loop:true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
         },
     },
 });
