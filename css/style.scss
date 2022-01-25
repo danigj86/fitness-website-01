@@ -357,7 +357,7 @@ section{
  // display: flex;
  
   //text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
  
  .box-content{
    //background-color: red;
@@ -402,6 +402,7 @@ section{
   // background-color:green;
    text-align: center;
    margin-top: 100px;
+   height: 100vh;
    
    .box-content{
      //background-color: red;
@@ -495,6 +496,189 @@ section{
      
    }
  }
+//------------- PARRALLAX ---------
+.parallax{
+  margin-top:50px;
+  margin-bottom: 150px;
+  background-image: url('/images/banner-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.644);
+    z-index: -1;
+}
+  
+  .box-content{
+    //background-color: red;
+    padding-left: 10%;
+    display: flex;
+    width: 90%;
+    justify-content:center;
+   }
+
+  .box{
+    width: 60%;
+   // background-color: $light-bg;
+    display: flex;
+    margin: 4px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2{
+      padding: 20px;
+    }
+  }
+
+}
+
+//------------ TESTIMONIALS ---------- 
+.testimonials{
+
+  flex-wrap: wrap;
+
+}
+  
+  .box-content{
+    //background-color: red;
+    padding-left: 10%;
+    display: flex;
+    width: 90%;
+    justify-content:center;
+
+    .box1{
+     // background-color:blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 40%;
+
+      p{
+        width:70%;
+      }
+    }
+    .box2{
+     // background-color:red;
+      width: 60%;
+      display: flex;
+      
+          .testimonials-slider{
+            
+            .slide{
+             border: 4px solid black;
+             padding: 10px;
+             background-color:$light-bg;
+             background:linear-gradient(150deg,  $light-bg 23%, transparent 85%);
+       
+    
+      .user-profile{
+       // background-color:yellow;
+        display: flex;
+        img{
+          border-radius:50%;
+          width:15%;
+          padding: 5px;
+        }
+        .user-info{
+         // background-color:pink;
+          padding: 5px;
+        }
+      }
+
+  }
+
+}
+ }
+
+}
+
+
+
+.review{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2rem;
+
+  .information{
+    flex:1 1 35rem;
+
+    span{
+      font-size: 2rem;
+      color:$red;
+    }
+
+    h3{
+      font-size: 3rem;
+      color:$white;
+      padding-top: 1rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+      line-height: 2;
+      color:$light-white;
+      padding:1rem 0;
+    }
+  }
+  
+  .review-slider{
+    flex:1 1 60rem;
+
+    .slide{
+      background:linear-gradient(130deg,  $light-bg 93%, transparent 90%);
+      padding:2rem 3rem;
+
+      p{
+        font-size: 1.5rem;
+        line-height: 2;
+        color:$light-white;
+      }
+
+      .user{
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+
+        img{
+          height: 5rem;
+          width: 5rem;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+
+        h3{
+          font-size: 2rem;
+          color:$white;
+        }
+
+        span{
+          color:$red;
+          font-size: 1.5rem;
+        }
+
+        i{
+          font-size: 5rem;
+          margin-left: auto;
+          margin-right: 2rem;
+          color:$red;
+        }
+      }
+    }
+  }
+}
 
 /* 
 

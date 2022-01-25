@@ -11,6 +11,8 @@
     navbar.classList.remove('active');
 };
 
+//----- HOME SWIPER --------
+
 var swiper = new Swiper(".home-slider", {
     autoplay: {
         delay: 3000,
@@ -27,6 +29,23 @@ var swiper = new Swiper(".home-slider", {
 });
 
 
+var swiper = new Swiper(".testimonials-slider", {
+    
+    grabCursor: true,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        600:{
+            slidesPerView:2,
+        },
+    },
+});
 
 /* let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
