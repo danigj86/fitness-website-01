@@ -654,7 +654,7 @@ section {
 
 .blog {
   text-align: center;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .blog .box-content {
@@ -859,6 +859,12 @@ section {
   border: 1px solid #bbb821;
   color: #bbb821;
   cursor: pointer;
+}
+
+.footer-end {
+  text-align: center;
+  width: 100%;
+  background-color: #111;
 }
 
 /* 

@@ -544,9 +544,7 @@ section{
 
 //------------ TESTIMONIALS ---------- 
 .testimonials{
-
   flex-wrap: wrap;
-
 }
   
   .box-content{
@@ -607,7 +605,7 @@ section{
 .blog{
   // background-color:green;
    text-align: center;
-   margin-top: 250px;
+   margin-top: 150px;
    
    .box-content{
      //background-color: red;
@@ -774,7 +772,11 @@ section{
 
   }
 }
-
+.footer-end{
+  text-align: center;
+  width: 100%;
+  background-color: $light-bg;
+}
 
 /* 
 
