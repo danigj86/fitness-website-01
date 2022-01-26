@@ -746,6 +746,121 @@ section {
   display: block;
 }
 
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2%;
+}
+
+.footer .footer-content {
+  width: 80%;
+  padding: 2rem 2%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .footer-content .footer-item {
+  line-height: 2;
+  width: 30%;
+  margin: 5px;
+}
+
+.footer .footer-content .footer-item h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-content .footer-item p {
+  font-size: 18px;
+  line-height: 3;
+}
+
+.footer .footer-content .footer-item p i {
+  color: #bbb821;
+}
+
+.footer .footer-content .footer-item span {
+  font-style: oblique;
+  color: #bbb821;
+}
+
+.footer .footer-content .contact-form {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.footer .footer-content .contact-form form {
+  width: 100%;
+  max-width: 480px;
+  background-color: #111;
+  border-radius: 4px;
+  padding: 30px;
+  margin: auto;
+}
+
+.footer .footer-content .contact-form textarea {
+  height: 160px;
+  resize: none;
+  padding-top: 15px;
+}
+
+.footer .footer-content .contact-form button {
+  width: 100%;
+}
+
+.footer .footer-content .form-control {
+  height: 45px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  border-radius: 30px;
+  background-color: #000;
+  border: 1px solid transparent;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer .footer-content .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.footer .footer-content .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+.footer .footer-content .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+.footer .footer-content .form-control::placeholder {
+  color: #fff;
+}
+
+.footer .footer-content .form-control:focus {
+  border-color: #bbb821;
+}
+
+.footer .footer-content .btn-1 {
+  background-color: #bbb821;
+  color: #fff;
+}
+
+.footer .footer-content .btn-1:hover {
+  background-color: transparent;
+  border: 1px solid #bbb821;
+  color: #bbb821;
+  cursor: pointer;
+}
+
 /* 
 
 .heading{
